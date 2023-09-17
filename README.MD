@@ -8,7 +8,7 @@ Here we describe the process to reproduce the results and retrain the models.
 
 **1.1.** Download SMPL model from https://smpl.is.tue.mpg.de/ (we use version 1.1.0), and place it in the models folder.  
 
-**1.2.** Prepare th test data:  
+**1.2.** Prepare the test data:  
 - Download the DIP-IMU data from https://dip.is.tue.mpg.de/ and place the unzipped files in data/raw_datasets/DIP-IMU  
 - For Total Capture the data including ground truth is obtained from the DIP authors. Place them in data/raw_datasets/TotalCapture/DIP_recalculate  
 - If you want to retrain the models, you need to obtain the AMASS data from https://amass.is.tue.mpg.de/ . (SMPL+HG versions were used, place them in data/raw_datasets/AMASS)  
