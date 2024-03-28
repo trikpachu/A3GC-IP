@@ -250,7 +250,7 @@ def transform_amass_split(mode='train', amass_path=None, amass_savepath=None):
         acctp.append(acctp_)
 
     print('saving the data')
-    for i in tqdm(range(len(ori5))):
+    for i in tqdm(range(len(oritp))):
         savepath_tpg = os.path.join(amass_savepath, mode+'_tp_global', '{}.p'.format(i))
         Path(os.path.dirname(savepath_tpg)).mkdir(exist_ok=True, parents=True)
         sample_tpg = ['_', '_', oritp[i], acctp[i], leaf_pos[i], full_pos[i], smplg_re[i]]
