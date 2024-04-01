@@ -287,7 +287,7 @@ def main():
     if args.start_at <= 3:
         if start_epoch > 0:
             for i in range(0, start_epoch):
-                sheduler3.step()
+                scheduler3.step()
 
         best_loss = 1e5
         tolerance_counter = 0
